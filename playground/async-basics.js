@@ -1,5 +1,3 @@
-console.log('Starting App');
-
 /*  The function in the callback function area will excute after 2000 milliseconds
     Once secondsetTimeout is called it's put on a callstack where it will wait for it's turn to complete.
 
@@ -10,6 +8,8 @@ console.log('Starting App');
     Calling the second time out does the same. Since it finishes first it gets put into the callback queue
     Callback queue: Callback functions wait until the call stack to be empty before it'll move the funciton into the call stack.
  */
+
+console.log('Starting App');
 
 setTimeout(()=> {
     console.log('Inside of callback');
